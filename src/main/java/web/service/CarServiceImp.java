@@ -8,9 +8,9 @@ import java.util.List;
 @Service
 public class CarServiceImp implements CarService{
 
+    List<Car> cars = new ArrayList<>();
     @Override
     public List<Car> listCars(Integer count) {
-        List<Car> cars = new ArrayList<>();
         cars.add(new Car(1, "Ferrari", 1989));
         cars.add(new Car(2, "BMW", 2021));
         cars.add(new Car(3, "Audi", 2010));
