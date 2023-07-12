@@ -1,54 +1,28 @@
 package web.model;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
-import java.util.List;
-
 public class Car {
-    private int id;
-    private String name;
-    private int year;
 
-    public Car(){}
+    private String carBrand;
+    private String carModel;
 
-    public Car(int id, String name,int year) {
-        this.id = id;
-        this.name = name;
-        this.year = year;
-    }
-    void add(Car car){
+    public Car(String carBrand, String carModel) {
+        this.carBrand = carBrand;
+        this.carModel = carModel;
     }
 
-    public int getId() {
-        return id;
+    public String getCarBrand() {
+        return carBrand;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCarBrand(String carBrand) {
+        this.carBrand = carBrand;
     }
 
-    public String getName() {
-        return name;
+    public String getCarModel() {
+        return carModel;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
-    }
-
-    @Override
-    public String toString() {
-        return "Car{" +
-                "id='" +id+'\''+
-                "name='" + name + '\'' +
-                ", year=" + year +
-                '}';
+    public void setCarModel(String carModel) {
+        this.carModel = carModel;
     }
 }
